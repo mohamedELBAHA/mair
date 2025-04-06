@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <button id="menu-toggle" aria-label="Toggle Sidebar">
+    <i class="fas fa-bars"></i>
+  </button>
   <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" 
     style="position: fixed; bottom: 20px; right: 20px; padding: 0.6rem 1rem; border-radius: 30px; border: none; background: #662b2b; color: white; cursor: pointer;">
     ↑ Back to Top
@@ -171,5 +174,14 @@
         renderResearchers();
       });
 </script>
+  <script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const sidebar = document.getElementById('sidebar');
+
+  toggleBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+  });
+</script>
+
 </body>
 </html>
