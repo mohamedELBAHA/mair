@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moroccans in AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" 
+    style="position: fixed; bottom: 20px; right: 20px; padding: 0.6rem 1rem; border-radius: 30px; border: none; background: #662b2b; color: white; cursor: pointer;">
+    ↑ Back to Top
+  </button>
+  <div id="sidebar">
+    <div>
+      <h2>🔎 Search</h2>
+      <input type="text" id="search" placeholder="Search by name..." />
+    </div>
+    <div>
+      <h2>🎓 Filter by Interest</h2>
+      <select id="interest-select">
+        <option value="all">All Interests</option>
+      </select>
+    </div>
+    <div>
+      <h2>Filter Options</h2>
+      <div class="action-buttons">
+        <button onclick="sortByName()">🔤 A-Z</button>
+        <button onclick="sortByHIndex()">📊 h-Index</button>
+        <button onclick="sortByCitations()">⭐ Citations</button>
+        <button onclick="shuffleList()">🔀 Shuffle</button>
+      </div>
+    </div>
+
+    <footer style="margin-top: auto; font-size: 0.75rem; color: #888; text-align: center; padding-top: 2rem;">
+      Developed with ❤️ by MEB
+    </footer>    
+  </div>
+  <header>
+    <div class="nav-container" style="flex-direction: column; gap: 0.3rem; padding-top: 0.5rem;">
+      <nav class="nav-links">
+        <a href="about.html" class="nav-item">About</a>
+        <a href="actions.html" class="nav-item">Actions</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <br> 
+    <section id="hero" style="max-width: 900px; margin: 0 auto 3rem; padding: 4rem 2rem 2rem; text-align: center;">
+      <h1 style="font-size: 2.5rem; color: #662b2b; margin-bottom: 1rem;">Moroccans in AI Research</h1>
+      <p style="font-size: 1.15rem; color: #444; max-width: 700px; margin: 0 auto 1.5rem;">
+        A global initiative to connect and showcase Moroccan researchers in Artificial Intelligence.
+        Discover talent, share knowledge, and join a growing movement shaping the future of AI.
+      </p>
+      <a href="join.html" class="join-btn" style="text-decoration: none; font-size: 1rem;"> Add a Researcher</a>
+      <a href="https://discord.gg/t4FWXr2a" class="join-btn" style="background: #5865F2; margin-left: 1rem; text-decoration: none; font-size: 1rem;">
+        <i class="fab fa-discord" style="margin-right: 6px;"></i> Join Discord
+      </a>
+    </section>    
+    <div id="researcher-container"></div>
+  </main>
+  <!-- JavaScript remains unchanged -->
+  <script>
+    let allResearchers = [];
+    let currentSort = null;
+
+    function renderResearchers(filter = null, query = '') {
+      const container = document.getElementById('researcher-container');
+      container.innerHTML = '';
+
+      let filtered = allResearchers.filter(r => {
+        const matchesFilter = !filter || filter === 'all' || r.interests.includes(filter);
+        const matchesSearch = r.name.toLowerCase().includes(query) ||
+                              r.affiliation.toLowerCase().includes(query) ||
+                              r.position.toLowerCase().includes(query);
+        return matchesFilter && matchesSearch;
+      });
+
+      if (currentSort === 'name') {
+        filtered.sort((a, b) => a.name.localeCompare(b.name));
+      } else if (currentSort === 'hindex') {
+        filtered.sort((a, b) => b.hindex - a.hindex);
+      } else if (currentSort === 'citations') {
+        filtered.sort((a, b) => b.citedby - a.citedby);
+      }
+
+      filtered.forEach((r) => {
+        const card = document.createElement('div');
+        card.className = 'card';
+
+        card.innerHTML = `
+          <img class="photo" src="${r.photo}" alt="${r.name}" />
+          <div class="name">${r.name}</div>
+          <div class="position">${r.position}<br><small>${r.affiliation}</small></div>
+          <div class="tags">
+            ${r.interests.map(tag => `<span class="tag">${tag}</span>`).join('')}
+          </div>
+          <div class="links">
+            ${r.scholar ? `<a href="${r.scholar}" target="_blank" title="Google Scholar"><i class='fas fa-graduation-cap'></i></a>` : ''}
+            ${r.linkedin ? `<a href="${r.linkedin}" target="_blank" title="LinkedIn"><i class='fab fa-linkedin'></i></a>` : ''}
+            ${r.website ? `<a href="${r.website}" target="_blank" title="Website"><i class='fas fa-globe'></i></a>` : ''}
+            ${r.twitter ? `<a href="${r.twitter}" target="_blank" title="Twitter"><i class='fab fa-twitter'></i></a>` : ''}
+          </div>
+          `;
+
+        container.appendChild(card);
+      });
+    }
+
+    function renderFilterOptions(interests) {
+      const select = document.getElementById('interest-select');
+      const unique = [...new Set(interests.flat())].sort();
+
+      unique.forEach(interest => {
+        const option = document.createElement('option');
+        option.value = interest;
+        option.textContent = interest;
+        select.appendChild(option);
+      });
+
+      select.addEventListener('change', () => {
+        const selected = select.value;
+        const query = document.getElementById('search').value.toLowerCase();
+        renderResearchers(selected, query);
+      });
+    }
+
+    function sortByName() {
+      currentSort = 'name';
+      const filter = document.getElementById('interest-select').value;
+      const query = document.getElementById('search').value.toLowerCase();
+      renderResearchers(filter, query);
+    }
+
+    function sortByHIndex() {
+      currentSort = 'hindex';
+      const filter = document.getElementById('interest-select').value;
+      const query = document.getElementById('search').value.toLowerCase();
+      renderResearchers(filter, query);
+    }
+
+    function sortByCitations() {
+      currentSort = 'citations';
+      const filter = document.getElementById('interest-select').value;
+      const query = document.getElementById('search').value.toLowerCase();
+      renderResearchers(filter, query);
+    }
+
+    function shuffleList() {
+      currentSort = null;
+      allResearchers = allResearchers.sort(() => Math.random() - 0.5);
+      const filter = document.getElementById('interest-select').value;
+      const query = document.getElementById('search').value.toLowerCase();
+      renderResearchers(filter, query);
+    }
+
+    document.getElementById('search').addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      const selected = document.getElementById('interest-select').value;
+      renderResearchers(selected, query);
+    });
+
+    fetch('researchers_en.json')
+      .then(res => res.json())
+      .then(data => {
+        allResearchers = data;
+        const interests = data.map(r => r.interests);
+        renderFilterOptions(interests);
+        renderResearchers();
+      });
+</script>
+</body>
+</html>

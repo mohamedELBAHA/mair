@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About – Moroccans in AI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9fafc;
+      color: #333;
+    }
+
+    header {
+      background: #662b2b;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      .action-card {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+      
+      .action-card.animate {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+
+    .actions-container {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .action-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .action-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .action-card h3 {
+      color: #662b2b;
+      margin-top: 0;
+    }
+
+    .action-card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
+      margin: 4rem 0 1rem;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://www.transparenttextures.com/patterns/arabesque.png');
+      opacity: 0.2;
+      z-index: -1;
+      background-repeat: repeat;
+      background-size: auto;
+    }
+    
+    
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9fafc;
+      color: #333;
+    }
+
+    header {
+      background: #662b2b;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+
+    h2 {
+      color: #662b2b;
+      margin-top: 2rem;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
+      margin: 4rem 0 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>About Moroccans in AI Research (MAIR)</header>
+
+  <div class="content">
+    <p>
+      Moroccans in AI Research (MAIR) is a global initiative to connect, represent, and support Moroccan researchers in the field of Artificial Intelligence — both within Morocco and across the diaspora.
+      Our goal is to highlight Moroccan talent in AI, foster collaboration across research and industry, and inspire the next generation of AI scientists and engineers. We believe in building a vibrant and inclusive AI community with Moroccan roots and global reach.
+    </p>
+  
+    <p>
+      MAIR is for current researchers, PhD candidates, postdocs, AI professionals, and Moroccan students aspiring to enter the field. Whether you're based in Rabat, Paris, Montreal or Tokyo — MAIR is your home.
+    </p>
+  </div>
+  <div class="content">
+    <h2 style="text-align: center;"> Our initiatives</h2>
+  </div>
+  <div class="actions-container">
+    <div class="action-card">
+      <h3>🗓 Webinars & Talks</h3>
+      <p>We host monthly online events with Moroccan AI researchers around the world. Join us to share insights, research, and connect with peers.</p>
+    </div>
+
+    <div class="action-card">
+      <h3>🎙 Community Spotlights</h3>
+      <p>We highlight researchers and their work in the MAIR network. Nominate someone (or yourself) to be featured and share your journey.</p>
+    </div>
+
+    <div class="action-card">
+      <h3>📚 Resources Hub</h3>
+      <p>Curated guides, links, and tips for students and early-career researchers entering AI — from learning paths to PhD application advice.</p>
+    </div>
+
+    <div class="action-card">
+      <h3>🧠 Mentorship Program</h3>
+      <p>Coming soon: we’re pairing junior Moroccan AI researchers with mentors from academia and industry to guide their journey.</p>
+    </div>
+
+    <div class="action-card">
+      <h3>🤝 Partnerships</h3>
+      <p>We are actively building relationships with universities, labs, and AI organizations to support our members and amplify our impact.</p>
+    </div>
+
+    <div class="action-card">
+      <h3>📩 Get Involved</h3>
+      <p>Whether you want to host a talk, contribute a guide, or support in any way — we’d love to hear from you.  reach out directly on <a href="https://www.linkedin.com/company/mair-ai/">Linkedin</a></p>
+    </div>
+  </div>
+  <div class="content">
+    <h2>🤝 Join the Movement</h2>
+    <p>
+    MAIR is a growing project — open to contributions, collaborations, and ideas. Want to be listed? Want to help? Just head to our <a href="join.html">Join Us</a> page or get in touch directly.
+     </p>
+  </div>
+  <script>
+    const cards = document.querySelectorAll('.action-card');
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+  
+    cards.forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+  <footer>Developed with ❤️ by MEB</footer>
+</body>
+</html>

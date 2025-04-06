@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add a Moroccan Researcher</title>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9fafc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    
+    .wrapper {
+      width: 100%;
+      max-width: 700px;
+      padding: 2rem;
+    }
+    
+    .form-box {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+    
+    h1 {
+      text-align: center;
+      color: #662b2b;
+      margin-bottom: 0.5rem;
+    }
+    
+    .subtitle {
+      text-align: center;
+      color: #666;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    label {
+      font-weight: 600;
+      display: block;
+      margin-top: 1rem;
+      margin-bottom: 0.25rem;
+    }
+    
+    input, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    
+    button {
+      margin-top: 1.5rem;
+      width: 100%;
+      padding: 0.75rem;
+      background: #662b2b;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    
+    button:hover {
+      background: #531f1f;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://www.transparenttextures.com/patterns/arabesque.png');
+      opacity: 0.25;
+      z-index: -1;
+      background-repeat: repeat;
+  }
+    
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="form-box">
+      <h1>Join Moroccans in AI</h1>
+      <p class="subtitle">Submit your profile to be featured in the MAIR network.</p>
+      <form action="https://formspree.io/f/xyzebenp" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="affiliation">Affiliation</label>
+        <input type="text" name="affiliation" id="affiliation" required>
+
+        <label for="interests">Research Interests</label>
+        <input type="text" name="interests" placeholder="e.g. NLP, Robotics" />
+
+        <label for="profile">Profile Link (Google Scholar, LinkedIn, etc.)</label>
+        <input type="url" name="profile" />
+
+        <label for="motivation">Why do you want to join?</label>
+        <textarea name="motivation" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
