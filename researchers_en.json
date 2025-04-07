@@ -891,5 +891,25 @@
         ],
         "citedby": 142,
         "lastupdate": "2025-03-04"
+    },
+    
+        {
+        "name": "Aissam Outchakoucht",
+        "affiliation": "Affiniti AI",
+        "position": "Conversational AI Specialist",
+        "hindex": 7,
+        "photo": "./assets/outchakoucht.jpeg",
+        "scholar": "https://scholar.google.com/citations?user=Py3xMSMAAAAJ&hl=en",
+        "linkedin": "https://www.linkedin.com/in/aissam-outchakoucht/",
+        "website": "",
+        "twitter": "",
+        "interests": [
+            "Machine Learning",
+            "Cyber Security",
+            "Internet of Things"
+        ],
+        "citedby": 437,
+        "lastupdate": "2025-03-04"
     }
+    
 ]
