@@ -831,7 +831,7 @@
         "interests": [
             "Artificial Intelligence",
             "3D computer vision",
-            "Deep learning",
+            "Deep learning"
         ],
         "citedby": 65,
         "lastupdate": "2025-04-25"
@@ -870,5 +870,26 @@
         ],
         "citedby": 869,
         "lastupdate": "2024-10-08"
+    },
+        {
+        "name": "Youssef Allouah",
+        "affiliation": "EPFL",
+        "position": "PhD Student",
+        "hindex": 5,
+        "photo": "./assets/allouah.jpeg",
+        "scholar": "https://scholar.google.com/citations?user=93WZ-rYAAAAJ&hl=fr&oi=ao",
+        "linkedin": "https://www.linkedin.com/in/youssef-allouah-8ab264190",
+        "website": "https://youssefallouah.com/",
+        "twitter": "",
+        "interests": [
+           "Machine Learning",
+           "HPC",
+           "Robustness",
+           "Privacy",
+           "Optimization",
+           "Federated Learning"
+        ],
+        "citedby": 142,
+        "lastupdate": "2025-03-04"
     }
 ]
