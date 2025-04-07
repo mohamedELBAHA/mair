@@ -816,5 +816,59 @@
         ],
         "citedby": 70,
         "lastupdate": "2024-10-08"
+    },
+    
+    {
+        "name": "Amine Ouasfi",
+        "affiliation": "INRIA",
+        "position":"Ph.D. student",
+        "hindex": 5,
+        "photo": "./assets/oasfi.jpeg",
+        "scholar": "https://scholar.google.com/citations?user=IdcK7TcAAAAJ&hl=en",
+        "linkedin": "https://fr.linkedin.com/in/amine-ouasfi",
+        "website": "",
+        "twitter": "",
+        "interests": [
+            "Artificial Intelligence",
+            "3D computer vision",
+            "Deep learning",
+        ],
+        "citedby": 65,
+        "lastupdate": "2025-04-25"
+    },
+    {
+        "name": "Yassine Abbahaddou",
+        "affiliation": "École Polytechnique",
+        "position":"Ph.D. student",
+        "hindex": 3,
+        "photo": "./assets/abbahaddou.jpeg",
+        "scholar": "https://scholar.google.com/citations?user=IdcK7TcAAAAJ&hl=en",
+        "linkedin": "https://www.linkedin.com/in/yassineabbahaddou/",
+        "website": "https://abbahaddou.github.io/",
+        "twitter": "",
+        "interests": [
+            "Graph Neural Networks",
+            "Natural Language Processing",
+            "Machine Learning"
+        ],
+        "citedby": 35,
+        "lastupdate": "2024-10-08"
+    },
+        {
+        "name": "El Houcine Bergou",
+        "affiliation": "UM6P",
+        "position":"Professor",
+        "hindex": 15,
+        "photo": "./assets/BERGOU.jpeg",
+        "scholar": "https://scholar.google.com/citations?user=qzxprWoAAAAJ&hl=fr",
+        "linkedin": "https://www.linkedin.com/in/ehbergou/?originalSubdomain=fr",
+        "website": "https://ehbergou.github.io/",
+        "twitter": "",
+        "interests": [
+            "Numerical Optimization",
+            "Machine Learning"
+        ],
+        "citedby": 869,
+        "lastupdate": "2024-10-08"
     }
 ]
