@@ -335,6 +335,11 @@ body::before {
     left: 0;
   }
 
+  header {
+    left: 0 !important;
+    width: 100% !important;
+  }
+
   #menu-toggle {
     display: block;
     position: fixed;
@@ -362,8 +367,8 @@ body::before {
   }
 
   .card {
+    margin-bottom: 1.5rem;
     padding: 1rem;
-    font-size: 0.95rem;
   }
 
   .tags, .links {
