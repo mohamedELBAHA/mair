@@ -910,6 +910,24 @@
         ],
         "citedby": 437,
         "lastupdate": "2025-03-04"
+    },
+        {
+        "name": "Yassir Bendou",
+        "affiliation": "IMT Atlantique",
+        "position": "PhD Student",
+        "hindex": 3,
+        "photo": "./assets/bendou.jpeg",
+        "scholar": "https://scholar.google.com/citations?user=Hfzg6rcAAAAJ&hl=fr&oi=ao",
+        "linkedin": "https://www.linkedin.com/in/yassir-bendou/",
+        "website": "",
+        "twitter": "",
+        "interests": [
+            "Machine Learning",
+            "Few-Shot Learning",
+            "Deep Learning"
+        ],
+        "citedby": 113,
+        "lastupdate": "2025-03-04"
     }
     
 ]
