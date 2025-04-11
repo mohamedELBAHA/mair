@@ -45,12 +45,12 @@
       <nav class="nav-links">
         <a href="about.html" class="nav-item">About</a>
         <div class="nav-item dropdown">
-        <span>Actions ▾</span>
+          <button class="dropdown-toggle">Actions ▾</button>
           <div class="dropdown-content">
             <a href="phd.html">Find a PhD</a>
             <a href="resources.html">Resources</a>
           </div>
-      </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -188,6 +188,19 @@
 
   toggleBtn.addEventListener('click', () => {
     sidebar.classList.toggle('open');
+  });
+</script>
+<script>
+  const dropdownToggle = document.querySelector('.dropdown-toggle');
+  const dropdown = document.querySelector('.dropdown');
+
+  dropdownToggle.addEventListener('click', (e) => {
+    e.stopPropagation(); // prevent closing when clicking on the button
+    dropdown.classList.toggle('open');
+  });
+
+  document.addEventListener('click', () => {
+    dropdown.classList.remove('open');
   });
 </script>
 
