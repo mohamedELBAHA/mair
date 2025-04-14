@@ -928,6 +928,24 @@
         ],
         "citedby": 113,
         "lastupdate": "2025-03-04"
+    },
+        {
+        "name": "Mohammed El Hassouni",
+        "affiliation": "Mohammed V University in Rabat",
+        "position": "Professor",
+        "hindex": 26,
+        "photo": "./assets/hassouni.jpeg",
+        "scholar": "https://scholar.google.com/citations?user=aIwj9L0AAAAJ&hl=fr",
+        "linkedin": "https://www.linkedin.com/in/mohammed-el-hassouni-28a4b320/",
+        "website": "",
+        "twitter": "",
+        "interests": [
+            "Deep Learning",
+            "Computer vision",
+            "Medical imaging"
+        ],
+        "citedby": 2292,
+        "lastupdate": "2025-03-04"
     }
     
 ]
