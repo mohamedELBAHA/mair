@@ -982,5 +982,23 @@
         ],
         "citedby": 752,
         "lastupdate": "2025-03-04"
+    },
+            {
+        "name": "Kenza Bouzid",
+        "affiliation": "Microsoft",
+        "position": "Applied Researcher",
+        "hindex": 7,
+        "photo": "./assets/bouzid.jpeg",
+        "scholar": "https://scholar.google.com/citations?user=ojjoo20AAAAJ&hl=en",
+        "linkedin": "https://uk.linkedin.com/in/kenza-bouzid",
+        "website": "",
+        "twitter": "",
+        "interests": [
+            "Machine Learning",
+            "Biomedical Imaging",
+            "Medical, health and genomics"
+        ],
+        "citedby": 394,
+        "lastupdate": "2025-03-04"
     }
 ]
