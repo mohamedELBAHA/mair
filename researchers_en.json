@@ -1000,5 +1000,24 @@
         ],
         "citedby": 394,
         "lastupdate": "2025-03-04"
-    }
+    },
+        {
+        "name": "Mohamed LAZAAR",
+        "affiliation": "Mohammed V University in Rabat",
+        "position": "Professor",
+        "hindex":20,
+        "photo": "./assets/lazaar.jpeg",
+        "scholar": "https://scholar.google.com/citations?user=txUWGn0AAAAJ&hl=fr",
+        "linkedin": "https://www.linkedin.com/in/mohamed-lazaar-7295851a/",
+        "website": "",
+        "twitter": "",
+        "interests": [
+            "Artificial Intelligence",
+            "Machine Learning",
+            "Deep Learning",
+            "Social Network Analysis"
+        ],
+        "citedby": 1589,
+        "lastupdate": "2025-03-04"
+    } 
 ]
