@@ -1019,5 +1019,61 @@
         ],
         "citedby": 1589,
         "lastupdate": "2025-03-04"
-    } 
+    },
+        {
+        "name": "Othmane Marfoq",
+        "affiliation": "Facebook",
+        "position": "PostDoc Researcher",
+        "hindex":6,
+        "photo": "./assets/omarfoq.jpeg",
+        "scholar": "https://scholar.google.com/citations?user=n8ysVHUAAAAJ&hl=fr&oi=ao",
+        "linkedin": "https://www.linkedin.com/in/othmane-marfoq",
+        "website": "",
+        "twitter": "",
+        "interests": [
+            "Machine Learning",
+            "Optimization",
+            "Federated Learning"
+        ],
+        "citedby":784 ,
+        "lastupdate": "2025-03-04"
+    },
+        {
+        "name": "Addi Ait-Mlouk",
+        "affiliation": "University of Skövde, Sweden",
+        "position": "Associate Professor",
+        "hindex":12,
+        "photo": "./assets/addi.jpeg",
+        "scholar": "https://scholar.google.com/citations?user=nvgiplcAAAAJ&hl=en",
+        "linkedin": "https://www.linkedin.com/in/addi-ait-mlouk-phd-32a85056",
+        "website": "",
+        "twitter": "",
+        "interests": [
+            "Decentralized AI", 
+            "Federated Learning", 
+            "Data Privacy"
+        ],
+        "citedby": 549,
+        "lastupdate": "2025-03-04"
+    },
+        {
+        "name": "Ismail Alaoui Abdellaoui",
+        "affiliation": "NeuraFirst",
+        "position": "Founder - AI Engineer",
+        "hindex":5,
+        "photo": "./assets/abdellaoui.jpeg",
+        "scholar": "https://scholar.google.com/citations?user=YzJU63YAAAAJ&hl=en",
+        "linkedin": "https://www.linkedin.com/in/ialaouiabdellaoui/",
+        "website": "",
+        "twitter": "",
+        "interests": [
+            "Time Series Analysis",
+            "Symbolic Regression",
+            "Forecasting",
+            "Predictive Maintenance",
+            "Graph Neural Networks"
+        ],
+        "citedby": 92,
+        "lastupdate": "2025-03-04"
+    }   
 ]
