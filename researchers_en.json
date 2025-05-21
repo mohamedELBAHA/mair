@@ -1075,5 +1075,23 @@
         ],
         "citedby": 92,
         "lastupdate": "2025-03-04"
+    },
+        {
+        "name": "Yassine El Kheir",
+        "affiliation": "German Research Center for Artificial Intelligence",
+        "position": "PhD Researcher",
+        "hindex":4,
+        "photo": "./assets/kheir.jpeg",
+        "scholar": "https://scholar.google.com/citations?user=KATQHwgAAAAJ&hl=en",
+        "linkedin": "https://www.linkedin.com/in/yassine-el-kheir-169b97191/",
+        "website": "",
+        "twitter": "",
+        "interests": [
+            "Speech Deepfake Detection",
+            "Self-Supervised Learning",
+            "Pronunciation Assessment"
+        ],
+        "citedby": 96,
+        "lastupdate": "2025-03-04"
     }   
 ]
