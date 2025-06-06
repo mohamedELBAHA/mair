@@ -1093,5 +1093,62 @@
         ],
         "citedby": 96,
         "lastupdate": "2025-03-04"
-    }   
+    },
+        {
+        "name": "Adnane Boukhayma",
+        "affiliation": "INRIA Rennes",
+        "position": "Research Scientist",
+        "hindex":12,
+        "photo": "./assets/adnane.png",
+        "scholar": "https://scholar.google.com/citations?user=ayfaw7AAAAAJ&hl=en",
+        "linkedin": "https://www.linkedin.com/in/adnaneboukhayma/",
+        "website": "https://boukhayma.github.io",
+        "twitter": "",
+        "interests": [
+            "3D Computer Vision",
+            "Deep Learning",
+            "Image Reconstruction"
+        ],
+        "citedby": 787,
+        "lastupdate": "2025-03-04"
+    },
+        {
+        "name": "Mohamed Youssfi",
+        "affiliation": "ENSET Mohammedia",
+        "position": "Professor",
+        "hindex": 18,
+        "photo": "./assets/youssfi.jpeg",
+        "scholar": "https://scholar.google.com/citations?user=1SJqqR4AAAAJ&hl=fr",
+        "linkedin": "https://www.linkedin.com/in/mohamed-youssfi-3ab0811b/",
+        "website": "",
+        "twitter": "",
+        "interests": [
+            "Artificial Intelligence",
+            "Multi-Agent Systems",
+            "Parallel Computing",
+            "Distributed Systems"
+        ],
+        "citedby": 1268,
+        "lastupdate": "2025-03-04"
+    },
+            {
+        "name": "Ilyass Moummad",
+        "affiliation": "INRIA Montpellier",
+        "position": "Postdoctoral Researcher",
+        "hindex": 5,
+        "photo": "./assets/Moummand.jpeg",
+        "scholar": "https://scholar.google.com/citations?user=1SJqqR4AAAAJ&hl=fr",
+        "linkedin": "https://www.linkedin.com/in/mohamed-youssfi-3ab0811b/",
+        "website": "",
+        "twitter": "",
+        "interests": [
+            "Artificial Intelligence",
+            "Deep Learning",
+            "Computer Vision",
+            "Machine Listening"
+        ],
+        "citedby": 108,
+        "lastupdate": "2025-03-04"
+    },
+    
 ]
